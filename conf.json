@@ -1,0 +1,50 @@
+{
+    "facebook": {
+        "url": { 
+            "authorization": "https://www.facebook.com/v3.3/dialog/oauth?",
+            "token": "https://graph.facebook.com/v3.3/oauth/access_token?",
+            "redirect": "http://localhost:8093/facebook",
+            "api": "https://graph.facebook.com/v3.3/me?fields=id,name",
+            "token_as_parameters": true
+        },
+        "client": {
+            "id":2487039177993579,
+            "secret": "8a02a373af8bc36176c54ff5c2590739",
+            "app_name": "Oauth"
+        },
+        "state" : "\"{st=state123abc,ds=286159500}\""
+    },
+    
+    "github": {
+        "url": { 
+            "authorization": "https://github.com/login/oauth/authorize?",
+            "token": "https://github.com/login/oauth/access_token?",
+            "redirect": "http://localhost:8093/github",
+            "api": "https://api.github.com/user",
+            "token_as_parameters": false 
+        },
+        "client": {
+            "id":"1f9c41cc685523861e4a",
+            "secret": "133f35f53c53ee20176654b6591236884a13ac98",
+            "app_name": "Oauth-sdk"
+        },
+        "state" : "OAIIoiojn"
+
+    },
+    
+    "reddit": {
+        "url": { 
+            "authorization": "",
+            "token": "",
+            "redirect": "",
+            "api": "",
+            "token_as_parameters": true
+        },
+        "client": {
+            "id":"",
+            "secret": "",
+            "app_name": ""
+        },
+        "state" : ""
+    }
+}

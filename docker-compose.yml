@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+    auth-server:
+      build: .
+      volumes:
+        - ./:/var/www/html
+        - ./auth-server/apache2.conf:/etc/apache2/apache2.conf
+      working_dir: /var/www/html
+      ports:
+        - 8093:80
+      restart: always
+
+    auth-client:
+        image: php:apache
+        volumes:
+          - ./:/var/www/html
+        working_dir: /var/www/html
+        ports:
+          - 8094:80
+        restart: always
+
